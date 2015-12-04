@@ -1,8 +1,8 @@
 <div class="area-center">
     <div ng-if="!main.order.finished && !main.showImprint">
-        <ul class="settings__tabs" ng-if="main.addresses.items.length" ng-include="'/views/partials/address_list.html'"></ul>
+        <ul class="settings__tabs" ng-if="main.addresses.items.length" ng-include="'views/partials/address_list.html'"></ul>
 
-        <form name="address_edit" class="form__container" ng-submit="main.addresses.save()" ng-if="main.addresses.editing" ng-include="'/views/partials/address_form.html'"></form>
+        <form name="address_edit" class="form__container" ng-submit="main.addresses.save()" ng-if="main.addresses.editing" ng-include="'views/partials/address_form.html'"></form>
 
         <div ng-if="!main.addresses.editing">
             <div class="message" ng-if="!main.addresses.items.length">
@@ -12,10 +12,10 @@
             </div>
 
             <div ng-if="main.addresses.active">
-                <div class="area__people" ng-include="'/views/partials/hunger.html'"></div>
+                <div class="area__people" ng-include="'views/partials/hunger.html'"></div>
 
                 <div class="area__selection">
-                    <div ng-if="main.restaurants.active" ng-include="'/views/partials/selection.html'"></div>
+                    <div ng-if="main.restaurants.active" ng-include="'views/partials/selection.html'"></div>
                     <div ng-if="main.restaurants.active === false" class="ui__notification ui__notification--error" ng-bind="'ERROR.NO_RESTAURANT_FOUND' | translate"></div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
 
     <div ng-if="main.order.finished && !main.showImprint" class="message" ng-bind="'OUTRO.ORDER_FINISHED' | translate"></div>
 
-    <div ng-if="main.showImprint" ng-include="'/views/partials/imprint.html'"></div>
+    <div ng-if="main.showImprint" ng-include="'views/partials/imprint.html'"></div>
 
     <div class="ui__notifications">
         <div class="ui__notification ui__notification--global" ng-repeat="notification in main.ui.notifications.items" ng-class="'ui__notification--' + notification.type + (notification.hidden ? ' ui__notification--hidden' : '')" ng-bind="notification.message"></div>
