@@ -1,0 +1,44 @@
+html {
+  font-size:$_fsDefault;
+  font-family:$_ffDefault;
+  background:$_cWhite;
+  color:$_cDark;
+  overflow:auto;
+  line-height:1.45em;
+  overflow-y:scroll;
+}
+
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+}
+
+body {
+  position:relative;
+  overflow:visible;
+}
+
+::-webkit-input-placeholder {
+  color:$_cDark;
+}
+:-moz-placeholder {
+  color:$_cDark;
+}
+::-moz-placeholder {
+  color:$_cDark;
+}
+:-ms-input-placeholder {
+  color:$_cDark;
+}
+
+hr {
+  display:block;
+  height:0;
+  border:0 none;
+  border-top:1px solid $_cGrayLight;
+  padding:0;
+  margin:$_sBig 0;
+}

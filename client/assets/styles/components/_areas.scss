@@ -1,0 +1,65 @@
+.area {
+  &-center {
+    max-width:$_wMax;
+    margin:0 auto;
+    padding:0 $_sBig;
+    box-sizing:content-box;
+  }
+
+  &__tile {
+    border:1px solid $_cGray;
+    border-radius:$_brNormal;
+    padding:$_sNormal;
+
+    &s {
+      margin-top:$_sBig;
+
+      &--caption {
+        font-weight:300;
+        line-height:1.45em;
+      }
+    }
+
+    &--action {
+      cursor:pointer;
+      user-select:none;
+    }
+  }
+
+  &__people {
+    &--caption {
+      font-weight:300;
+      margin-top:$_sBig;
+      line-height:1.45em;
+    }
+  }
+
+  &__selection {
+    &--caption {
+      font-weight:300;
+      margin-top:($_sBig / 2);
+      line-height:1.65em;
+    }
+
+    &--terms {
+      font-size:$_fsDefault - 1px;
+
+      a {
+        color:$_cDark;
+        text-decoration:underline;
+        cursor:pointer;
+      }
+    }
+  }
+
+  &__imprint {
+    padding:$_sBig 0;
+    line-height:1.65em;
+
+    a {
+      color:$_cDark;
+      text-decoration:underline;
+      cursor:pointer;
+    }
+  }
+}

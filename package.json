@@ -1,0 +1,14 @@
+{
+  "name": "big-red-pizza-button",
+  "version": "0.0.1",
+  "description": "Use the big red button for ordering pizza!",
+  "scripts": {
+    "start": "echo \"ERR: To be done!\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathan-reisdorf/big-red-pizza-button.git"
+  },
+  "license": "MIT",
+  "author": "Jonathan Reisdorf"
+}
